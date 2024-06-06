@@ -1,0 +1,311 @@
+:root{
+    --brand:#473C38;
+    --brandlight:#C2B19C;
+    --marro-light:#C2B19C;
+    --light:#F0F1F0;
+    --p:#666666;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+p{
+    color: var(--p);
+    line-height: 130%;
+}
+
+h2{
+    font-family: "Playfair Display", serif;
+
+    line-height: 100%;
+}
+
+.btn{
+    background-color: var(--brand);
+    color: var(--light);
+    border-radius: 5px;
+
+    transition: 0.2;
+
+}
+
+.btn:hover{
+    transform: scale(0.85);
+}
+
+.header{
+    width: 100%;
+    padding: 10px 0;
+
+    background-color: #ffffff;
+    font-family: "Playfair Display", serif;
+
+    position: sticky;
+    top: 0px;
+
+    box-shadow: 2px 1px 5px #585252;
+
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu a{
+    color: var(--brand);
+    margin-left: 66px;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    font-size:larger;
+}
+
+.hero-section{
+    font-family: "Playfair Display", serif;
+    background-color: var(--brand);
+    width: 100%;
+    height: calc(100vh);
+    display: flex; 
+
+}
+
+.hero-section h1{
+    line-height: 100%;
+    font-size: 60px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.hero-section p{
+    font-family: "roboto", serif;
+    color: #ffffff;
+    width: 461px;
+}
+
+.inicio{
+    display: flex;
+    align-items: center;
+    column-gap: 122px;
+}
+
+.btn-catalogo{
+    display: inline-block;
+
+    width: 200px;
+    padding: 15px 52px 14px 51px;
+
+    text-align: center;
+
+    background-color: var(--marro-light);
+    line-height: 18px;
+    color: var(--brand);
+    border-radius: 5px;
+
+    transition: 0.3;
+}
+
+.btn-catalogo:hover{
+    transform: scale(0.95);
+    background-color: #978c87;
+}
+
+.quem-somos{
+    padding-top: 10px;
+
+    font-family: "Playfair Display", serif;
+    display: flex;
+    align-items: center;
+    column-gap: 129px;
+
+}
+
+.quem-somos img{
+    margin-top: 101px;
+    margin-bottom: 101px;
+}
+
+.quem-somos h2{
+    font-size: 48px;
+    color: var(--brand);
+    line-height: 100%;
+    font-weight: 400;
+
+    margin-bottom: 25px;
+}
+
+.quem-somos p{
+    color: var(--p);
+}
+
+.quem-somos .btn{
+    display: inline-block;
+    margin-top: 25px;
+    padding: 5px 26px 6px 25px;
+}
+
+.catalogo{
+    width: 100%;
+    height: 640px;
+
+    padding-top: 85px;
+
+    
+    background-color: var(--light);    
+}
+
+.card .image{
+    margin-bottom:17px;
+}
+
+.catalogo .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo{
+    display: flex;
+    column-gap: 24px;
+}
+
+.titulo2{
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card{
+    font-weight: 400;
+    border-radius: 5px;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    background-color: #FAFAFA;
+
+    width: 364px;
+    height: 442px;
+
+    box-shadow: 2px 1px 10px #6e6e6e;
+}
+
+.card p{
+    padding-bottom: 27px;
+}
+
+.caixa .btn{
+    display: inline-block;
+
+    text-align: center;
+
+    width: 290px;
+
+    padding-top: 3px ;
+    padding-bottom: 3px;
+}
+
+.caixa{
+    width: 286.30px;
+    height: 372px;
+}
+.caixa h2{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.pense h2{
+    font-weight: 400;
+    font-size: 40px;
+
+    margin-top: 20px;
+    color: var(--brand);
+}
+
+.pense{
+    height: 128px;
+    margin-bottom: 54px;
+}
+
+.cadastre{
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.receber-novidades{
+    width: 100%;
+    height: 155px;
+    background-color: var(--marro-light);
+    display: flex;
+}
+
+input{
+    width: 461px;
+    padding-left: 10px;
+
+}
+
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    margin: 63px auto;
+    height: 30px;
+}
+
+.form .btn{
+    padding: 5px 14px 3px 14px;
+}
+
+.footer {
+    background-color: var(--brand);
+    width: 100%;
+    height: 212px;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.rodape{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    display: flex;
+    
+}
+
+.footer h2{
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.footer p{
+    color: #ffffff;
+}
+
+.caixa1{
+    margin-left: 24px;
+}
