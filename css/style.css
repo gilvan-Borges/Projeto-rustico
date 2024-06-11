@@ -6,6 +6,15 @@
     --p:#666666;
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
+
+div{
+    scroll-margin-top: 104px;
+}
+
 body{
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -16,6 +25,8 @@ a{
 }
 
 h1,h2,h3,h4,h5,h6{
+    font-family: "Playfair Display", serif;
+
     margin: 0;
 }
 
@@ -25,8 +36,6 @@ p{
 }
 
 h2{
-    font-family: "Playfair Display", serif;
-
     line-height: 100%;
 }
 
@@ -50,9 +59,8 @@ h2{
     background-color: #ffffff;
     font-family: "Playfair Display", serif;
 
-    position: sticky;
     top: 0px;
-
+    position: sticky;
     box-shadow: 2px 1px 5px #585252;
 
 }
@@ -129,8 +137,6 @@ h2{
 }
 
 .quem-somos{
-    padding-top: 10px;
-
     font-family: "Playfair Display", serif;
     display: flex;
     align-items: center;
@@ -139,17 +145,13 @@ h2{
 }
 
 .quem-somos img{
-    margin-top: 101px;
-    margin-bottom: 101px;
+    margin-top: 10px;
 }
 
 .quem-somos h2{
     font-size: 48px;
     color: var(--brand);
-    line-height: 100%;
     font-weight: 400;
-
-    margin-bottom: 25px;
 }
 
 .quem-somos p{
@@ -158,81 +160,62 @@ h2{
 
 .quem-somos .btn{
     display: inline-block;
-    margin-top: 25px;
-    padding: 5px 26px 6px 25px;
+    padding: 5px 26px;
 }
 
 .catalogo{
-    width: 100%;
-    height: 640px;
-
-    padding-top: 85px;
-
-    
     background-color: var(--light);    
 }
 
-.card .image{
-    margin-bottom:17px;
-}
-
-.catalogo .container{
-    display: flex;
-    flex-direction: column;
-}
-
-.conteudo{
-    display: flex;
-    column-gap: 24px;
-}
-
-.titulo2{
+.catalogo h2{
     font-weight: 400;
     font-size: 48px;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.flex-card{
+    column-gap: 24px;
+    display: flex;
 }
 
 .card{
+    padding: 35px 38px;
+    margin-bottom: 50px;
+    
     font-weight: 400;
     border-radius: 5px;
 
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
     background-color: #FAFAFA;
 
-    width: 364px;
-    height: 442px;
-
     box-shadow: 2px 1px 10px #6e6e6e;
+}
+
+.card h3{
+    font-size: 24px;
+    font-weight: 400;
+
+    line-height: 130%;
+
 }
 
 .card p{
     padding-bottom: 27px;
 }
 
-.caixa .btn{
-    display: inline-block;
+.card .btn{
+    display: block;
 
     text-align: center;
-
-    width: 290px;
 
     padding-top: 3px ;
     padding-bottom: 3px;
 }
 
-.caixa{
-    width: 286.30px;
-    height: 372px;
-}
-.caixa h2{
-    font-weight: 400;
-    font-size: 24px;
-}
+
+
 
 .pense h2{
     font-weight: 400;
@@ -306,6 +289,3 @@ input{
     color: #ffffff;
 }
 
-.caixa1{
-    margin-left: 24px;
-}
