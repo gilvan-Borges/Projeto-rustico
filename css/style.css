@@ -214,9 +214,6 @@ h2{
     padding-bottom: 3px;
 }
 
-
-
-
 .pense h2{
     font-weight: 400;
     font-size: 40px;
@@ -272,8 +269,7 @@ input{
 
 }
 
-.rodape{
-    font-family: "Playfair Display", serif;
+.footer .container{
     font-weight: 400;
     display: flex;
     
@@ -289,3 +285,7 @@ input{
     color: #ffffff;
 }
 
+.rodape{
+    column-gap: 24px;
+    width: 362px;
+}
