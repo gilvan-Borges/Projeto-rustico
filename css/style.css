@@ -52,30 +52,31 @@ h2{
     transform: scale(0.85);
 }
 
+.container{
+    width: calc(100% - 30px);
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 .header{
     width: 100%;
-    padding: 10px 0;
+    height: auto;
+    padding: 16px 0;
 
     background-color: #ffffff;
     font-family: "Playfair Display", serif;
 
-    top: 0px;
     position: sticky;
+    top: 0px;
     box-shadow: 2px 1px 5px #585252;
+    z-index: 9999;
 
 }
-
-.container{
-    width: 1140px;
-    margin: 0 auto;
-}
-
 .header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 
 .menu a{
     color: var(--brand);
@@ -91,7 +92,7 @@ h2{
     font-family: "Playfair Display", serif;
     background-color: var(--brand);
     width: 100%;
-    height: calc(100vh);
+    height: calc(100vh - 104px);
     display: flex; 
 
 }
@@ -106,7 +107,7 @@ h2{
 .hero-section p{
     font-family: "roboto", serif;
     color: #ffffff;
-    width: 461px;
+    max-width: 461px;
 }
 
 .inicio{
@@ -119,12 +120,13 @@ h2{
     display: inline-block;
 
     width: 200px;
-    padding: 15px 52px 14px 51px;
+    padding-top: 6px;
+    padding-bottom: 8px;
 
     text-align: center;
 
     background-color: var(--marro-light);
-    line-height: 18px;
+    line-height:36px;
     color: var(--brand);
     border-radius: 5px;
 
@@ -141,11 +143,10 @@ h2{
     display: flex;
     align-items: center;
     column-gap: 129px;
-
 }
 
 .quem-somos img{
-    margin-top: 10px;
+    margin-top: 100px;
 }
 
 .quem-somos h2{
@@ -179,6 +180,7 @@ h2{
 .flex-card{
     column-gap: 24px;
     display: flex;
+
 }
 
 .card{
@@ -189,10 +191,9 @@ h2{
     border-radius: 5px;
 
     background-color: #FAFAFA;
-
+row-gap: 30px;
     box-shadow: 2px 1px 10px #6e6e6e;
 }
-
 .card h3{
     font-size: 24px;
     font-weight: 400;
@@ -214,6 +215,12 @@ h2{
     padding-bottom: 3px;
 }
 
+
+
+.pense{
+    height: 128px;
+    margin-bottom: 54px;
+}
 .pense h2{
     font-weight: 400;
     font-size: 40px;
@@ -221,12 +228,6 @@ h2{
     margin-top: 20px;
     color: var(--brand);
 }
-
-.pense{
-    height: 128px;
-    margin-bottom: 54px;
-}
-
 .cadastre{
     margin-top: 50px;
     text-align: center;
@@ -238,8 +239,7 @@ h2{
     width: 100%;
     height: 155px;
     background-color: var(--marro-light);
-    display: flex;
-}
+    display: flex;}
 
 input{
     width: 461px;
@@ -247,32 +247,34 @@ input{
 
 }
 
-
 .form{
     display: flex;
     justify-content: space-between;
     margin: 63px auto;
     height: 30px;
+    column-gap: 24px;
 }
 
 .form .btn{
-    padding: 5px 14px 3px 14px;
+    padding: 6px 14px 3px 14px;
+    width: 170px;
 }
 
 .footer {
     background-color: var(--brand);
     width: 100%;
-    height: 212px;
 
     display: flex;
     align-items: center;
 
 }
 
-.footer .container{
+.rodape{
+    font-family: "Playfair Display", serif;
     font-weight: 400;
     display: flex;
-    
+    padding: 50px 0;
+    column-gap: 25px;
 }
 
 .footer h2{
@@ -285,7 +287,181 @@ input{
     color: #ffffff;
 }
 
-.rodape{
-    column-gap: 24px;
-    width: 362px;
+@media (max-width: 1100px){
+    .menu{
+        display: none;
+    }
+    .linha{
+        width: 40px;
+        height: 3px;
+        background-color:var(--brand);
+        margin-bottom: 3px;
+    }
+    .inicio{
+        text-align: center;
+        flex-direction: column;
+    }
+    .quem-somos .btn{
+        margin-top: 39px;
+        margin-bottom: 100px;
+    } 
+    .btn-catalogo{
+        max-width: 200px ;
+    }
+    .cama{
+        width: 264px;
+        height: 210px;
+        padding-left: 100px;
+    }
+    .image{
+        margin: 0 auto;
+    }
+    .hero-section h1{
+        font-size: 32px;
+        line-height: 36px;
+        padding-top: 80px;
+    }
+    .hero-section p{
+        padding-top: 16px ;
+        padding-bottom: 16px;
+        margin: 0 auto;
+        line-height: 24px;
+    }
+    .hero-section .image{
+        
+        padding:50px 97px 80px 0px;
+    }
+    .content{
+        text-align: center;
+    }
+    .content h2{
+        padding-top: 109px;
+        padding-bottom: 41px;
+        font-size: 28px;
+    }
+
+    .quem-somos .image{
+        display: none;
+    }
+
+    .flex-card{
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+
+   }
+
+    .flex-card .card{
+        padding: 29px 0;
+        margin-bottom: 10px;
+        max-width: 340px;
+        padding: 38px;
+    }
+    .catalogo h2{
+        font-size: 28px;
+        padding-top: 150px;
+        padding-bottom: 50px;
+        color: var(--brand);
+    }
+    .card img{
+        width: 280px;
+    }
+    .card .content{
+        max-width: 280px;
+        text-align: left;
+    }
+
+    .cadastre .btn{
+        max-width: 162px;
+        height: 30px;
+    }
+    .cadastre .container{
+        max-width: 1100px;
+
+    }
+    .form{
+
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }   
+}
+
+@media (max-width:767px) {
+    .container{
+        max-width: 745px;
+        padding: 10px 15px;
+    }
+
+    .quem-somos .image{
+        display: none;
+    }
+    .cama{
+        padding-left: 90px;
+    }
+    .catalogo h2{
+        font-size: 28px;
+        padding-top: 150px;
+        padding-bottom: 50px;
+        color: var(--brand);
+    }
+    .quem-somos .content{
+        text-align:left;
+    }
+    .quem-somos .content a{
+        margin-top:39px ;
+    }
+    .card{
+        margin-bottom: 50px;
+    }
+    .card img{
+        width: 280px;
+    }
+    .card .content{
+        max-width: 280px;
+        text-align: left;
+    }
+
+    .cadastre .container h2{
+        font-size: 24px;
+        
+    }
+
+    .form{
+        align-items:baseline;
+    }
+     .form input{
+        max-width: 364px;
+    }
+
+}
+@media (max-width:470px) {
+    .cama{
+        padding-left: 70px;
+    }
+}
+@media (max-width:450px) {
+    .rodape{
+        max-width: 366px;
+        flex-direction: column;
+        text-align:justify;
+        padding: 80px 15px;
+        row-gap: 15px;
+    }
+    .cama{
+        padding-left: 50px;
+    }
+    .form{
+        align-items:baseline;
+    }
+     .form input{
+        max-width: 304px;
+        margin: 0 auto;
+    }
+    .cadastre .container{
+        margin: 10px auto;
+        max-width: 330px;
+    }
+
 }

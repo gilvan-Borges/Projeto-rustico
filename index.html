@@ -9,50 +9,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
     <title>Rústico</title>
 </head>
 <body>
 
-    <div class="header">
+    <header class="header">
 
         <div class="container">
             <div class="logo">
                 <img src="./img/logo-rustico-2.svg" alt="logo um circulo escrito Rústico ">
             </div>
 
-            <div class="menu">
+            <div class="btn-menu">
+                <div class="linha"></div>
+                <div class="linha"></div>
+                <div class="linha"></div>
+            </div>
+
+            <nav class="menu">
                 <a href="#">Página inicial</a>
                 <a href="#quemSomos">Quem Somos</a>
                 <a href="#catalago">Catálago</a>
                 <a href="#cliente">Área do Cliente</a>
                 <a href="#cliente">Fale Conosco</a>
 
-            </div>
+            </nav>
 
         </div>
 
-    </div>
+    </header>
 
-    <div class="hero-section">
-
-            <div class="container inicio">
+    <section class="hero-section">
+            <section class="container inicio">
                 <div class="content">
                     <h1>A maior rede de móveis rústicos do Brasil</h1>
-                    <p>Vivamus accumsan nec quam nec interdum. Donec ac fringlla elit. Fusce et vestibulum nisl. 
-                    Nam eu augue in dolor dictum.</p>
+                    <p>Vivamus accumsan nec quam nec interdum. Donec ac fringlla elit. Fusce et vestibulum nisl.Nam eu augue in dolor dictum.</p>
                     <a href="#catalago" class="btn-catalogo">Catálago</a>
                 </div>
                 <div class="image">
-                    <img src="./img/cama-rustica.png" alt="">
+                    <img  class="cama" src="./img/cama-rustica.png" alt=""  data-aos="fade-left" data-aos-delay="300" data-aos-duration="2000">
+
                 </div>
-            </div>
+            </section>
 
-    </div>
+    </section>
 
-    <div id="quemSomos">    
+    <section id="quemSomos">    
         <div class="container quem-somos">
-            <div class="content">
+            <div class="content" data-aos="fade-up">
                 <h2>Da nossa fábrica direto para sua casa!</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Sed eget metus at neque consectetur rhoncus ut congue eros.
@@ -66,54 +73,57 @@
                     efficitur vitae libero.</p>
                     <a href="#" class="btn">Leia mais</a>
             </div>
-            <div class="image">
+            <div class="image" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                 <img src="./img/armario-rustico.png" alt="">
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="catalago">
+    <section id="catalago">
         <div class="catalogo">
                     <h2>Madeiras certificadas</h2>
                 <div class="container flex-card">
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
 
                         <img src="./img/balcao.jpg" alt="">
-
-                        <h3>Nam eu augue in dolor </h3>
-                        <p>Duis commodo odio ut augue tempor iaculis. Proin auctor imperdiet nulla quis finibus. 
-                        Donec fringilla rutrum neque non dapibus. Phasellus ultricies</p>
-                        <a href="#" class="btn">Leia mais</a>
-
+                        <div class="content">
+                            <h3>Nam eu augue in dolor </h3>
+                            <p>Duis commodo odio ut augue tempor iaculis. Proin auctor imperdiet nulla quis finibus. 
+                            Donec fringilla rutrum neque non dapibus. Phasellus ultricies</p>
+                            <a href="#" class="btn">Leia mais</a>
+                        </div>       
                     </div>
 
-                    <div class="card">
+                    <div class="card"  data-aos="fade-up" data-aos-delay="300"      data-aos-duration="1000">
 
                         <img src="./img/office.jpg" alt="">
 
-                        <h3>Nam eu augue in dolor </h3>
-                        <p>Duis commodo odio ut augue tempor iaculis. Proin auctor imperdiet nulla quis finibus. 
-                        Donec fringilla rutrum neque non dapibus. Phasellus ultricies</p>
-                        <a href="#" class="btn">Leia mais</a>
-
+                        <div class="content">
+                            <h3>Nam eu augue in dolor </h3>
+                            <p>Duis commodo odio ut augue tempor iaculis. Proin auctor imperdiet nulla quis finibus. 
+                            Donec fringilla rutrum neque non dapibus. Phasellus ultricies</p>
+                            <a href="#" class="btn">Leia mais</a>
+                        </div>       
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
 
                         <img src="./img/mesa.jpg" alt="">
 
-                        <h3>Nam eu augue in dolor </h3>
-                        <p>Duis commodo odio ut augue tempor iaculis. Proin auctor imperdiet nulla quis finibus. 
-                        Donec fringilla rutrum neque non dapibus. Phasellus ultricies</p>
-                        <a href="#" class="btn">Leia mais</a>
+                        <div class="content">
+                            <h3>Nam eu augue in dolor </h3>
+                            <p>Duis commodo odio ut augue tempor iaculis. Proin auctor imperdiet nulla quis finibus. 
+                            Donec fringilla rutrum neque non dapibus. Phasellus ultricies</p>
+                            <a href="#" class="btn">Leia mais</a>
+                        </div>       
 
                     </div>
 
                 </div>    
             </div>
-    </div>
-    <div id="cliente">    
+    </section>
+    <section id="cliente">    
         <div class="cadastre">
             <div class="container pense">
                 <div class="image">
@@ -124,35 +134,43 @@
             </div>
 
             <div class="receber-novidades">
-
-                <div class="container form">
-                    <input type="text" placeholder="Informe seu nome" required>
-                    <input type="email" placeholder="Informe seu nome" required>
-                    <a href="#" class="btn">Receber novidades</a>
-                </div>    
+                <div class="container">
+                    <div class="form">
+                        <input type="text" placeholder="Informe seu nome" required data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                        <input type="email" placeholder="Informe seu nome" required data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                        <a href="#" class="btn" data-aos="flip-left" data-aos-delay="600" data-aos-duration="1000">Receber novidades</a >
+                    </div> 
+                </div>       
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="footer">
-            <div class="container ">
-                <div class="rodape">
+    <footer class="footer">
+            <div class="container rodape">
+                <div class="caixa1">
                     <h2>Lorem Ipsum</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit.
                     Sed eget metus at neque consectetur rhoncus ut congue eros.</p>
                 </div>
-                <div class="rodape">
+                <div class="caixa1">
                     <h2>Lorem Ipsum</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit.
                     Sed eget metus at neque consectetur rhoncus ut congue eros.</p>
                 </div>
-                <div class="rodape">
+                <div class="caixa1">
                     <h2>Lorem Ipsum</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipi scing elit.
                     Sed eget metus at neque consectetur rhoncus ut congue eros.</p>
                 </div>
 
             </div>    
-    </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50
+        });
+    </script>
 </body>
 </html>
