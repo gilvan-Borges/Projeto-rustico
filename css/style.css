@@ -1,9 +1,9 @@
 :root{
     --brand:#473C38;
     --brandlight:#C2B19C;
-    --marro-light:#C2B19C;
     --light:#F0F1F0;
     --p:#666666;
+    --destaque:#B2935B;
 }
 
 
@@ -61,11 +61,9 @@ h2{
 .header{
     width: 100%;
     height: auto;
-    padding: 16px 0;
-
     background-color: #ffffff;
     font-family: "Playfair Display", serif;
-
+    padding: 16px 0;
     position: sticky;
     top: 0px;
     box-shadow: 2px 1px 5px #585252;
@@ -73,6 +71,7 @@ h2{
 
 }
 .header .container{
+    padding: 9px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -289,13 +288,67 @@ input{
 
 @media (max-width: 1100px){
     .menu{
-        display: none;
-    }
+        background-color:var(--destaque);
+        position: absolute;
+        top: 134px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh);
+
+        display: flex;
+        flex-direction: column;
+
+        transform: translateX(-100%);
+        transition: 0.6s;
+
+        opacity: 0;
+        pointer-events: none;
+
+        }
+        .menu-open{
+            transform: translateX(0);
+            pointer-events: all;
+            opacity: 1;
+        }
+
+        .menu a{
+            margin: 0 ;
+            padding: 20px 15px;
+            border-bottom: 1px solid var(--brand);
+        }
+        .menu a:hover{
+            text-decoration: none;
+            font-size:larger;
+            background-color: #473c3873;
+        }
+    
+
     .linha{
         width: 40px;
         height: 3px;
         background-color:var(--brand);
         margin-bottom: 3px;
+        transition: 0.5s;
+
+    }
+    .x .linha:first-child{
+        transform: rotate(45deg) translate(5px, 5px);
+        transition-delay: 0.3s;
+
+    }
+
+       /*QUANDO a bar for a filha número 2*/
+       .x .linha:nth-child(2){
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+       /*QUANDO a bar for a ultima filha*/
+       .x .linha:last-child{
+        transform: rotate(-45deg) translate(4px, -3px);
+        transition-delay: 0.3s;
+
+
     }
     .inicio{
         text-align: center;
@@ -391,7 +444,6 @@ input{
 @media (max-width:767px) {
     .container{
         max-width: 745px;
-        padding: 10px 15px;
     }
 
     .quem-somos .image{
