@@ -1,5 +1,5 @@
 
-![Logo](https://gilvan-borges.github.io/Crossfit-hardCore/logo1.svg)
+![Logo](https://gilvan-borges.github.io/Projeto-rustico/img/logo-rustico-2.svg)
 
 # Rústico
 
