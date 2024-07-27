@@ -80,11 +80,16 @@ h2{
 .menu a{
     color: var(--brand);
     margin-left: 66px;
+    font-size: 18px;
 }
 
 .menu a:hover{
     text-decoration: underline;
-    font-size:larger;
+    transform: scale(1.2px);
+    color: #e4aa3e;
+
+
+
 }
 
 .hero-section{
@@ -92,7 +97,7 @@ h2{
     background-color: var(--brand);
     width: 100%;
     height: calc(100vh - 104px);
-    display: flex; 
+    display: flex;
 
 }
 
